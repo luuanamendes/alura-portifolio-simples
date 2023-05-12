@@ -1,0 +1,77 @@
+:root {
+    --color-ligth-100: #F2F2F4;
+
+    --color-dark-800: #202124;
+    --color-dark-900: #171717;
+
+    --color-red-700: #C4164B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-dark-900);
+    color: var(--color-ligth-100);
+}
+
+.conteudo {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo .conteudo-descricao {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.conteudo-descricao-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.conteudo-descricao-texto h1 {
+    font-size: 36px;
+}
+
+.titulo-destaque {
+    color: var(--color-red-700);
+}
+
+.conteudo-descricao-texto p {
+    font-size: 24px;
+    text-align: justify;
+}
+
+.conteudo-descricao-botoes {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conteudo-descricao-botoes-btn {
+    background-color: var(--color-red-700);
+    width: 280px;
+    padding: 21px 0;
+    border-radius: 16px;
+    text-align: center;
+    color: var(--color-ligth-100);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.conteudo-descricao-botoes-btn:hover {
+    transition: .3s;
+    box-shadow: 0px 0px 10px rgba(169, 0, 51, 0.8);
+}
